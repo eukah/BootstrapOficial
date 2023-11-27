@@ -1,0 +1,208 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+#img_molho {
+    width: 100%;
+    height: auto;
+}
+
+#button_space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+
+#button_site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #c1a976;
+    border-radius: 10px;
+    height: 75px;
+    width: 175px;
+}
+
+.section {
+    display: flex;
+    background-color: #E9E5AE;
+    width: 1320px; /* quando vimos no site do pc da escola, a largura e altura de cada section estava assim, */
+    height: 712px; /* mas elas mudam de acordo com a resolução da tela então tem a ver com a responsidade também, então esses não são valores definitivos */
+    padding: 30px;
+    border: 1px solid tan;
+    justify-content: space-around;
+}
+
+#section_div {
+    display: flex;
+    align-items: center;
+    width: 1320px; 
+    height: 152px;
+    background-color: #E9E5AE; 
+    border: 1px solid tan;
+    padding: 30px;
+}
+
+.titulos {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#titulo_no_margin {
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+.text_container {
+    width: 50%;
+}
+
+.img {
+    display: flex;
+    border-radius: 30px;
+    border: 5px solid tan;
+}
+
+#img_no_border {
+    border-radius: 30px;
+}
+
+
+/* tava tentando mecher com isso pra deixar responsivo */
+@media screen and (max-width: 1920px) {
+    #footer_section{
+        width: 1320px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .section {
+        width: 1000px;
+    }
+
+    #section_div {
+        width: 1000px;
+    }
+
+    #img_no_border {
+        width: 500px;
+        height: 500px;
+    }
+
+    .img {
+        width: 500px;
+        height: 500px;
+    }
+
+    footer {
+        width: 1000px;
+    }
+
+    #footer_section {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section {
+        width: 768px;
+    }
+
+    #section_div {
+        width: 768px;
+    }
+
+    #img_no_border {
+        width: 400px;
+        height: 400px;
+    }
+
+    .img {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+    }
+
+    footer {
+        width: 768px;
+    }
+
+    #footer_section {
+        width: 768px;
+    }
+
+    p {
+        font-size: 14px
+    }
+
+    #img_no_border {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        width: 640px;
+        height: 850px;
+        flex-direction: column;
+    }
+
+    #section_div {
+        width: 640px;
+    }
+
+    .text_container {
+        width: 100%;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    footer {
+        width: 640px;
+    }
+
+    #footer_section {
+    width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #section_div {
+        width: 100%;
+    }
+
+    .text_container {
+        width: 100%;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    #footer_section {
+    width: 100%;
+    }
+
+    #logo {
+        margin: auto;
+    }
+}

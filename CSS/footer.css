@@ -1,0 +1,36 @@
+#footer_section {
+    display: flex;
+    background-color: #C1A976;
+    height: 600px;
+    padding: 30px;
+}
+
+#mensagem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.input {
+    margin: 10px;
+}
+
+.escrever {
+    height: 100px;
+}
+
+#enviar {
+    height: 40px;
+    width: 160px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#contato {
+    margin-top: 56px;
+}
+
+#telefone {
+    color: white;
+}
